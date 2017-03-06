@@ -1,3 +1,5 @@
+set nocompatible
+
 set softtabstop=2 "insert spaces
 
 set shiftwidth=2 "indent 2 spaces
@@ -10,13 +12,12 @@ set smartindent
 
 set showcmd "show command in status line
 
-"set cindent
-
 set mouse=a "enable mouse use
 
 let Tlist_Compact_Format = 1
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Close_On_Select = 1
+
 nnoremap <C-l> :TlistToggle<CR>
 
 set hlsearch " When there is a previous search pattern, highlight all
@@ -29,7 +30,6 @@ set ignorecase      " Ignore case in search patterns.
  
 set smartcase       " Override the 'ignorecase' option if the search pattern
                     " contains upper case characters.
-
 
 set ruler           " Show the line and column number of the cursor position,
                     " separated by a comma.
@@ -44,8 +44,8 @@ let mapleader = "\<Space>"
 
 set encoding=utf-8
 
-set nocompatible
-
 set relativenumber
 
 set wrap
+
+set whichwrap=b,s,<,>,[,]
